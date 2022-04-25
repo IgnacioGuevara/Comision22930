@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/icono.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Restaurante Visubio | Contactos</title>
+</head>
+<body>
+    
+    <!--Formulario-->
+    <header class="HeaderContactos">
+        <div class="containerContactos">
+            <nav>
+                <a href="../Base/index.html"><p class="logo"> Restaurante <br> Visubio</p> </a>
+                <ul>
+                    <li><a href="../Base/index.html" class="active">Home</a></li>
+                    <li><a href="./B-menu.html" class="active">Menú</a</li>
+                    <li><a href="./C-contactos.html"class="active">Contactos</a></li>
+                    <li><a href="./D-sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
+                    <li><a href="./A-Reservas.html" class="active">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <form class="formContactos" action="enviar.php" method="post" enctype="text/plain">
+            <fieldset >
+                <legend> Contrataciones</legend>
+                <label for="Nombre">Nombre</label>
+                    <input type="text" placeholder="Escribe tu nombre" id="Nombre"> <br>
+                <label for="Apellido">Apellido</label>
+                    <input type="text" placeholder="Escribe tu apellido" id="Apellido">
+                <p>ingrese su Género:</p>
+                    <input name="Genero" type="radio">
+                <label for="genero">Hombre</label>
+                    <input name="Genero" type="radio" id="genero">
+                <label for="">Mujer</label>
+                <br>
+                <br>
+                <label for="correo">Correo electronico</label>
+                    <input type="mail" name="correo" placeholder="Escribe tu correo" id="correo"> <br>
+                <label for="">Telefono</label>
+                    <input type="number"  placeholder="Escribe tu numero"><br>
+                <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha"><br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escriba un comentario"></textarea> <br>
+                <p>¿cual es su idioma natal?</p>
+                <select name="Cual es su idioma natal">
+                    <option> Español</option>
+                    <option> Inglés</option>
+                    <option> Alemán</option>
+                    
+                </select> <br>
+
+                <label for="">Acepta los terminos y condiciones</label> 
+                    <input type="checkbox"><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar"><br>
+                
+            </fieldset>
+        </form>
+    </section>
+
+<footer class="fooContactos">
+    <h1>Nuestras redes</h1>
+    <p><strong>Instagram:</strong> @Visubio.oficial</p> 
+    <p><strong>Facebook:</strong> Visubio</p>
+    <p><strong>Twitter:</strong> @visubio-web</p>
+    <p><strong>Whats-app:</strong> +54 0351-311-6901 </p>
+</footer>
+</body>
+</html>

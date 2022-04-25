@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/icono.png">
+    <link rel="stylesheet" href="../pages/estilo.css">
+    <title>Restaurante Visubio | Reservas</title>
+</head>
+<body>
+    <header class="HeaderReserva">
+        <div class="containerReserva">
+            <nav>
+                <a href="../Base/index.html"><p class="logo"> Restaurante <br> Visubio</p> </a>
+                <ul>
+                    <li><a href="../Base/index.html" class="active">Home</a></li>
+                    <li><a href="./B-menu.html" class="active">Menú</a</li>
+                    <li><a href="./C-contactos.html"class="active">Contactos</a></li>
+                    <li><a href="./D-sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
+                    <li><a href="./A-Reservas.html" class="active">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="bodyReserva" >
+        <form class="formReserva" action="enviar.php" method="post" enctype="text/plain">
+            <fieldset><legend> Reservas</legend>
+                <p>Ten en cuenta que los dias <Strong>Lunes-Martes-Miercoles</Strong> el local se encuentra cerrado.</p>
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre"> <br>
+                <label for="">Apellido</label>
+                <input type="text" placeholder="Escribe tu apellido">
+                <br>
+                <label for="">Correo electronico</label>
+                <input type="mail" name="correo" placeholder="Escribe tu correo"> <br>
+                <label for="">Telefono</label>
+                <input type="number"  placeholder="Escribe tu numero"><br>
+                </select> <br>
+                <label for="">Seleccione el dia y horario de su Reserva.</label>
+                <input type="date">
+                <input type="time"><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar"><br>
+                
+            </fieldset>
+        </form>
+        
+    </main>
+    <footer class="footerReserva">
+        <div class="textoReservaFoo">
+        <h1>Nuestras redes</h1>
+        <p><strong>Instagram:</strong> @Visubio.oficial</p> 
+        <p><strong>Facebook:</strong> Visubio</p>
+        <p><strong>Twitter:</strong> @visubio-web</p>
+        <p><strong>Whats-app:</strong> +54 0351-311-6901 </p>
+    </div>
+    </footer>
+    
+</body>
+</html>
