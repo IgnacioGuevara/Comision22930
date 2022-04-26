@@ -98,7 +98,15 @@ ul li a:hover {
 .item{
     margin: 10px;
     border: solid black 2px;
+    height: 280px;
+    width: auto;
+    transition: height 280px 2.7s;
 }
+.item:hover{
+    height: 300px;
+}
+
+
 .container1{
     color: #86CC8C;
 }
