@@ -244,13 +244,40 @@ input{
     font-weight: bold;
     color: #86CC8C;
 }
+.menu{
+    color:#282828;
+}
+.categorias{
+    padding: 10px;
+    color: #6bc773;
+}
+.menuPizza{
+    padding: 8px;
+    border: 2px solid #86CC8C ;
+}
+.menuLomito{
+    padding: 8px;
+    border: 2px solid #86CC8C;
+}
+.menuBebidas{
+    padding: 8px;
+    border: 2px solid #86CC8C;
+}
+
+.precio{
+    float: right;
+}
+
+
 .Delivery{
     color: #6bc773;
+    text-align: center;
 }
 
 .pNumero{
     margin: 30px;
     color: #86CC8C;
+    text-align: center;
 }
 .bodyMenu{
     text-align: center;
