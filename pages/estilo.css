@@ -245,47 +245,49 @@ input{
     color: #86CC8C;
 }
 .menu{
+    text-align: center;
     color:#282828;
 }
 .categorias{
     padding: 10px;
     color: #6bc773;
 }
-.menuPizza{
+#menuCategoria{
+    transition: height 2s;
+}
+
+.transicion{
     padding: 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: bold;
     border: 2px solid #86CC8C ;
 }
-.menuLomito{
-    padding: 8px;
-    border: 2px solid #86CC8C;
+
+#menuCategoria:hover{
+    height: auto;
+    color:#86CC8C;
+    background-color: #282828;
 }
-.menuBebidas{
-    padding: 8px;
-    border: 2px solid #86CC8C;
-}
+
+
+
+
+
 
 .precio{
     float: right;
 }
-
-
 .Delivery{
     color: #6bc773;
     text-align: center;
 }
-
 .pNumero{
     margin: 30px;
     color: #86CC8C;
     text-align: center;
 }
-.bodyMenu{
-    text-align: center;
-}
-.nota{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
+
+
 
 .fooMenu{
     color: white;
