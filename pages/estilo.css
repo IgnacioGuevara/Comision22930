@@ -138,7 +138,7 @@ ul li a:hover {
 
 .item{
     margin: 10px;
-    border: solid black 2px;;
+    border: solid black 2px;
     height: 280px;
     width: auto;
     transition: height 280px 2.7s;
