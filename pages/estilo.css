@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -44,11 +45,15 @@ ul {
 
 nav {
   text-align: center;
-  width: 100%;
   height: 80px;
+  width: 100%;
   background-color: #6c6c6c;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav div {
@@ -58,10 +63,13 @@ nav div {
 
 nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 30%;
   height: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .Titulo {
@@ -84,6 +92,8 @@ ul li a {
   text-decoration: none;
   font-size: 1rem;
   color: #86CC8C;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 12px;
 }
@@ -103,34 +113,42 @@ ul li a:hover {
     font-weight: 350;
     line-height: 1;
   }
-
   .container {
     color: #86CC8C;
     text-align: center;
   }
-
-  .menú {
-    color: #86CC8C;
+  .menú, .menuNuevo {
     text-align: center;
+    color: #86CC8C;
     border: 1px solid black;
   }
-
+  .menuNuevo {
+    color: #86CC8C;
+  }
   .item {
     margin: 10px;
-    border: solid black 2px;
     height: 280px;
     width: auto;
+    -webkit-transition: height 280px 2.7s;
     transition: height 280px 2.7s;
   }
-
+  .colores-red {
+    border: 3px solid red;
+  }
+  .colores-orange {
+    border: 3px solid orange;
+  }
+  .colores-purple {
+    border: 3px solid purple;
+  }
   .item:hover {
     height: 300px;
   }
-
   .container1 {
     color: #86CC8C;
   }
 }
+
 @media screen and (min-width: 1270px) {
   .main {
     color: black;
@@ -140,53 +158,65 @@ ul li a:hover {
     font-weight: 400;
     line-height: 1.5;
   }
-
   .container {
     color: #86CC8C;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     text-align: center;
   }
-
-  .menú {
+  .menú, .menuNuevo {
     color: #86CC8C;
     text-align: center;
-    border: solid black 1px;
+    border: 1px solid black;
   }
-
   .item {
     margin: 10px;
     border: solid black 2px;
     height: 280px;
     width: auto;
+    -webkit-transition: height 280px 2.7s;
     transition: height 280px 2.7s;
   }
-
+  .colores-red {
+    border: 3px solid red;
+  }
+  .colores-orange {
+    border: 3px solid orange;
+  }
+  .colores-purple {
+    border: 3px solid purple;
+  }
   .item:hover {
     height: 300px;
   }
-
   .container1 {
     color: #86CC8C;
   }
 }
+
 .footer {
   background-color: #282828;
   margin: 0;
   padding-bottom: 1%;
 }
 
-.fooNuestro {
+.fooNuestro, .fooNuestoNuevo {
   margin: 2px;
   padding: 2px;
+}
+
+.fooNuestoNuevo {
   text-align: center;
   color: #cCCCCC;
 }
 
 .fooTitulo {
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #cCCCCC;
   margin: 0;
 }
@@ -224,7 +254,6 @@ ul li a:hover {
     border-color: #6c6c6c;
     font-size: 1em;
   }
-
   input {
     outline: none;
     border-color: #C7FFCB;
@@ -232,6 +261,7 @@ ul li a:hover {
     border-style: double;
   }
 }
+
 @media only screen and (min-width: 850px) {
   .formReserva {
     background-color: #86CC8C;
@@ -241,7 +271,6 @@ ul li a:hover {
     border-color: #6c6c6c;
     font-size: 1em;
   }
-
   input {
     outline: none;
     border-color: #C7FFCB;
@@ -249,6 +278,7 @@ ul li a:hover {
     border-style: double;
   }
 }
+
 .footerReserva {
   background-color: #282828;
   margin: 0;
@@ -278,14 +308,15 @@ ul li a:hover {
 }
 
 #menuCategoria {
+  -webkit-transition: height 2s;
   transition: height 2s;
 }
 
 .transicion {
   padding: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
-  border: 2px solid #86CC8C;
+  border: 2px solid #282828;
 }
 
 #menuCategoria:hover {
@@ -350,7 +381,7 @@ ul li a:hover {
 .text2 {
   text-align: center;
   font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .video {
@@ -364,5 +395,4 @@ ul li a:hover {
   margin: 0 auto;
   padding-bottom: 14%;
 }
-
 /*# sourceMappingURL=estilo.css.map */

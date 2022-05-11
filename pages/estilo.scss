@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
 }
+$color1: #86CC8C;
+$color2: #C7FFCB;
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    background-color: #C7FFCB;
+    background-color: $color2;
 }
 h1{ font-size: 3em;}
 h2{font-size: 2.3em;}
@@ -14,7 +16,7 @@ p{font-size: 1.25;}
 ul{list-style: none;}
 
 .Header{
-    background-color: #86CC8C;
+    background-color: $color1;
     margin: 0;
     
 }
@@ -22,13 +24,17 @@ ul{list-style: none;}
     margin: 0;
     padding:25px 30px;
     font-weight: bold;
-    color: #86CC8C;
+    color: $color1;
     text-decoration:none; 
 }
+@mixin size ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
 nav{
     text-align: center;
-    width: 100%;
-    height: 80px;
+    @include size(80px, 100%);
     background-color: #6c6c6c;
     display: flex;
     justify-content: space-between;
@@ -50,7 +56,7 @@ nav ul{
 }
 .subtitulo{
     text-align: center;
-    color: #C7FFCB;
+    color: $color2;
 }
 
 
@@ -63,14 +69,14 @@ nav ul{
 ul li a{
     text-decoration: none;
     font-size: 1rem;
-    color:#86CC8C;
+    color:$color1;
     display: flex;
     padding: 12px;
 }
 ul li a:hover {
     text-decoration: none;
     font-size: 1rem;
-    color: #86CC8C;
+    color: $color1;
 }
 
 @media screen and (max-width:1269px){
@@ -84,31 +90,49 @@ ul li a:hover {
 }
 
 .container{
-    color: #86CC8C;
+    color: $color1;
     text-align: center;
 }
-
 .menú{
-    color:#86CC8C;
     text-align: center;
+    color: $color1;
     border: 1px solid black;
 }
+
+.menuNuevo{
+    @extend .menú;
+        color: $color1;
+}
+
+
 
 
 .item{
     margin: 10px;
-    border: solid black 2px;
     height: 280px;
     width: auto;
     transition: height 280px 2.7s;
 }
+
+$paleta:(
+    col1: red,
+    col2: orange,
+    col3: purple
+    );
+
+@each $sizes, $color in $paleta{
+    .colores-#{$color}{
+        border: 3px solid $color;
+    }
+}
+
 .item:hover{
     height: 300px;
 }
 
 
 .container1{
-    color: #86CC8C;
+    color: $color1;
 }
 }
 
@@ -122,19 +146,19 @@ ul li a:hover {
     line-height: 1.5;
 }
 .container{
-    color: #86CC8C;
+    color: $color1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
 }
 
-.menú{
-    color:#86CC8C;
-    text-align: center;
-    border: solid black 1px;
-}
 
+.menú{
+    color: $color1;
+    text-align: center;
+    border: 1px solid black;
+}
 
 .item{
     margin: 10px;
@@ -143,12 +167,23 @@ ul li a:hover {
     width: auto;
     transition: height 280px 2.7s;
 }
+$paleta:(
+    col1: red,
+    col2: orange,
+    col3: purple
+    );
+
+@each $sizes, $color in $paleta{
+    .colores-#{$color}{
+        border: 3px solid $color;
+    }
+}
 .item:hover{
     height: 300px;
 }
 
 .container1{
-    color: #86CC8C;
+    color: $color1;
 }
 }
 
@@ -161,9 +196,15 @@ ul li a:hover {
 .fooNuestro{ 
     margin: 2px;
     padding: 2px;
+}
+
+.fooNuestoNuevo{
+    @extend .fooNuestro;
     text-align: center;
     color: #cCCCCC;
 }
+
+
 .fooTitulo{
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -183,18 +224,18 @@ ul li a:hover {
 }
 /*----------------------------Reserva-----------------------*/
 .Header{
-    background-color: #86CC8C;
+    background-color: $color1;
     margin: 0;
 
 }
 .logoReserva{ 
     padding:0 30px;
     font-weight: bold;
-    color: #86CC8C;
+    color: $color1;
 }
 @media only screen and (max-width: 849px){
 .formReserva{
-    background-color:#86CC8C;
+    background-color:$color1;
     width: 300px;
     text-align:right;
     margin: auto;
@@ -203,7 +244,7 @@ ul li a:hover {
 }
 input{
     outline: none;
-    border-color:#C7FFCB;
+    border-color:$color2;
     border-radius: 15px;
     border-style:double;
 }    
@@ -213,7 +254,7 @@ input{
 
 @media only screen and (min-width: 850px){
 .formReserva{
-    background-color:#86CC8C;
+    background-color:$color1;
     width: 300px;
     text-align:right;
     margin: auto;
@@ -222,7 +263,7 @@ input{
 }
 input{
     outline: none;
-    border-color:#C7FFCB;
+    border-color:$color2;
     border-radius: 15px;
     border-style:double;
 }
@@ -242,7 +283,7 @@ input{
 .logoMenu{
     padding:0 30px;
     font-weight: bold;
-    color: #86CC8C;
+    color: $color1;
 }
 .menu{
     text-align: center;
@@ -256,21 +297,21 @@ input{
     transition: height 2s;
 }
 
+
 .transicion{
     padding: 8px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-weight: bold;
-    border: 2px solid #86CC8C ;
+    border: 2px solid #282828;
 }
+
 
 #menuCategoria:hover{
     height: auto;
-    color:#86CC8C;
+    color:$color1;
     background-color: #282828;
+
 }
-
-
-
 
 
 
@@ -283,7 +324,7 @@ input{
 }
 .pNumero{
     margin: 30px;
-    color: #86CC8C;
+    color: $color1;
     text-align: center;
 }
 
@@ -301,10 +342,10 @@ input{
 .logoContactos{
     padding:0 30px;
     font-weight: bold;
-    color: #86CC8C;
+    color: $color1;
 }
 .formContactos{
-    background-color:#86CC8C;
+    background-color:$color1;
     width: 500px;
     text-align:center;
     margin: auto;
@@ -329,7 +370,7 @@ input{
     font-family:'Times New Roman', Times, serif
 }
 .video{
-    color: #86CC8C;
+    color: $color1;
 }
 .fooSobreNos{
     background-color: #282828;
