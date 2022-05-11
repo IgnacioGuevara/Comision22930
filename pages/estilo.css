@@ -1,341 +1,368 @@
-*{
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    background-color: #C7FFCB;
-}
-h1{ font-size: 3em;}
-h2{font-size: 2.3em;}
-h3{font-size: 2em;}
-p{font-size: 1.25;}
-ul{list-style: none;}
-
-.Header{
-    background-color: #86CC8C;
-    margin: 0;
-    
-}
-.logo{
-    margin: 0;
-    padding:25px 30px;
-    font-weight: bold;
-    color: #86CC8C;
-    text-decoration:none; 
-}
-nav{
-    text-align: center;
-    width: 100%;
-    height: 80px;
-    background-color: #6c6c6c;
-    display: flex;
-    justify-content: space-between;
-
-}
-nav div{
-    width: 20%;
-    height: 100%;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    width: 30%;
-    height: 100%;
-    justify-content: space-around;
-}
-.Titulo{
-    text-align: center;
-}
-.subtitulo{
-    text-align: center;
-    color: #C7FFCB;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color: #C7FFCB;
 }
 
+h1 {
+  font-size: 3em;
+}
 
-.RestauranteVisubio{
-    color: white;
-    font-size: 20px;
-    margin: 16px;
-    padding-bottom: 20px;
+h2 {
+  font-size: 2.3em;
 }
-ul li a{
-    text-decoration: none;
-    font-size: 1rem;
-    color:#86CC8C;
-    display: flex;
-    padding: 12px;
+
+h3 {
+  font-size: 2em;
 }
+
+p {
+  font-size: 1.25;
+}
+
+ul {
+  list-style: none;
+}
+
+.Header {
+  background-color: #86CC8C;
+  margin: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: #86CC8C;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  background-color: #6c6c6c;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  width: 20%;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.Titulo {
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #C7FFCB;
+}
+
+.RestauranteVisubio {
+  color: white;
+  font-size: 20px;
+  margin: 16px;
+  padding-bottom: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #86CC8C;
+  display: flex;
+  padding: 12px;
+}
+
 ul li a:hover {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #86CC8C;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #86CC8C;
 }
 
-@media screen and (max-width:1269px){
-.main{
+@media screen and (max-width: 1269px) {
+  .main {
     color: black;
     margin: 0;
     padding: 0 auto;
     font-size: 0.8rem;
     font-weight: 350;
     line-height: 1;
-}
+  }
 
-.container{
+  .container {
     color: #86CC8C;
     text-align: center;
-}
+  }
 
-.menú{
-    color:#86CC8C;
+  .menú {
+    color: #86CC8C;
     text-align: center;
     border: 1px solid black;
-}
+  }
 
-
-.item{
+  .item {
     margin: 10px;
     border: solid black 2px;
     height: 280px;
     width: auto;
     transition: height 280px 2.7s;
-}
-.item:hover{
+  }
+
+  .item:hover {
     height: 300px;
-}
+  }
 
-
-.container1{
+  .container1 {
     color: #86CC8C;
+  }
 }
-}
-
-@media screen and (min-width:1270px){
-.main{
+@media screen and (min-width: 1270px) {
+  .main {
     color: black;
     margin: 0;
     padding: 0 auto;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-}
-.container{
+  }
+
+  .container {
     color: #86CC8C;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
-}
+  }
 
-.menú{
-    color:#86CC8C;
+  .menú {
+    color: #86CC8C;
     text-align: center;
     border: solid black 1px;
-}
+  }
 
-
-.item{
+  .item {
     margin: 10px;
     border: solid black 2px;
     height: 280px;
     width: auto;
     transition: height 280px 2.7s;
-}
-.item:hover{
+  }
+
+  .item:hover {
     height: 300px;
-}
+  }
 
-.container1{
+  .container1 {
     color: #86CC8C;
+  }
 }
-}
-
-
-.footer{
-    background-color: #282828;
-    margin: 0;
-    padding-bottom:1%;
-}
-.fooNuestro{ 
-    margin: 2px;
-    padding: 2px;
-    text-align: center;
-    color: #cCCCCC;
-}
-.fooTitulo{
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #cCCCCC;
-    margin: 0;
-}
-.fooHorario{
-    color: #cCCCCC;
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.footer {
+  background-color: #282828;
+  margin: 0;
+  padding-bottom: 1%;
 }
 
-.active{
-    color: white;
+.fooNuestro {
+  margin: 2px;
+  padding: 2px;
+  text-align: center;
+  color: #cCCCCC;
 }
+
+.fooTitulo {
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #cCCCCC;
+  margin: 0;
+}
+
+.fooHorario {
+  color: #cCCCCC;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.active {
+  color: white;
+}
+
 /*----------------------------Reserva-----------------------*/
-.Header{
+.Header {
+  background-color: #86CC8C;
+  margin: 0;
+}
+
+.logoReserva {
+  padding: 0 30px;
+  font-weight: bold;
+  color: #86CC8C;
+}
+
+@media only screen and (max-width: 849px) {
+  .formReserva {
     background-color: #86CC8C;
-    margin: 0;
-
-}
-.logoReserva{ 
-    padding:0 30px;
-    font-weight: bold;
-    color: #86CC8C;
-}
-@media only screen and (max-width: 849px){
-.formReserva{
-    background-color:#86CC8C;
     width: 300px;
-    text-align:right;
+    text-align: right;
     margin: auto;
     border-color: #6c6c6c;
     font-size: 1em;
-}
-input{
+  }
+
+  input {
     outline: none;
-    border-color:#C7FFCB;
+    border-color: #C7FFCB;
     border-radius: 15px;
-    border-style:double;
-}    
+    border-style: double;
+  }
 }
-
-
-
-@media only screen and (min-width: 850px){
-.formReserva{
-    background-color:#86CC8C;
+@media only screen and (min-width: 850px) {
+  .formReserva {
+    background-color: #86CC8C;
     width: 300px;
-    text-align:right;
+    text-align: right;
     margin: auto;
     border-color: #6c6c6c;
     font-size: 1em;
-}
-input{
+  }
+
+  input {
     outline: none;
-    border-color:#C7FFCB;
+    border-color: #C7FFCB;
     border-radius: 15px;
-    border-style:double;
+    border-style: double;
+  }
 }
+.footerReserva {
+  background-color: #282828;
+  margin: 0;
+  padding-bottom: 20%;
+  text-align: center;
 }
 
-.footerReserva{
-    background-color: #282828;
-    margin: 0;
-    padding-bottom: 20%;
-    text-align: center;
+.textoReservaFoo {
+  color: whitesmoke;
 }
-.textoReservaFoo{
-    color: whitesmoke;
-}
+
 /*-------------menú-------------*/
-
-.logoMenu{
-    padding:0 30px;
-    font-weight: bold;
-    color: #86CC8C;
-}
-.menu{
-    text-align: center;
-    color:#282828;
-}
-.categorias{
-    padding: 10px;
-    color: #6bc773;
-}
-#menuCategoria{
-    transition: height 2s;
+.logoMenu {
+  padding: 0 30px;
+  font-weight: bold;
+  color: #86CC8C;
 }
 
-.transicion{
-    padding: 8px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-weight: bold;
-    border: 2px solid #86CC8C ;
+.menu {
+  text-align: center;
+  color: #282828;
 }
 
-#menuCategoria:hover{
-    height: auto;
-    color:#86CC8C;
-    background-color: #282828;
+.categorias {
+  padding: 10px;
+  color: #6bc773;
 }
 
-
-
-
-
-
-.precio{
-    float: right;
-}
-.Delivery{
-    color: #6bc773;
-    text-align: center;
-}
-.pNumero{
-    margin: 30px;
-    color: #86CC8C;
-    text-align: center;
+#menuCategoria {
+  transition: height 2s;
 }
 
+.transicion {
+  padding: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  border: 2px solid #86CC8C;
+}
 
+#menuCategoria:hover {
+  height: auto;
+  color: #86CC8C;
+  background-color: #282828;
+}
 
-.fooMenu{
-    color: white;
-    background-color: #282828;
-    margin: 0 auto;
-    padding: 100px;
-    text-align: center;
+.precio {
+  float: right;
+}
+
+.Delivery {
+  color: #6bc773;
+  text-align: center;
+}
+
+.pNumero {
+  margin: 30px;
+  color: #86CC8C;
+  text-align: center;
+}
+
+.fooMenu {
+  color: white;
+  background-color: #282828;
+  margin: 0 auto;
+  padding: 100px;
+  text-align: center;
 }
 
 /*--------------Contactos------------*/
-.logoContactos{
-    padding:0 30px;
-    font-weight: bold;
-    color: #86CC8C;
-}
-.formContactos{
-    background-color:#86CC8C;
-    width: 500px;
-    text-align:center;
-    margin: auto;
-    border-color: #6c6c6c;
-    font-size: 1em;
-}
-.fooContactos{
-    background-color: #282828;
-    color: whitesmoke;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 20%;
-}
-/*--------sobre-nosotros----*/
-.sobreNos{
-    color: #6bc773;
-    text-align: center;
-}
-.text2{
-    text-align: center;
-    font-weight: bold;
-    font-family:'Times New Roman', Times, serif
-}
-.video{
-    color: #86CC8C;
-}
-.fooSobreNos{
-    background-color: #282828;
-    color: whitesmoke;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom:14%;
+.logoContactos {
+  padding: 0 30px;
+  font-weight: bold;
+  color: #86CC8C;
 }
 
+.formContactos {
+  background-color: #86CC8C;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  border-color: #6c6c6c;
+  font-size: 1em;
+}
+
+.fooContactos {
+  background-color: #282828;
+  color: whitesmoke;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20%;
+}
+
+/*--------sobre-nosotros----*/
+.sobreNos {
+  color: #6bc773;
+  text-align: center;
+}
+
+.text2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.video {
+  color: #86CC8C;
+}
+
+.fooSobreNos {
+  background-color: #282828;
+  color: whitesmoke;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 14%;
+}
+
+/*# sourceMappingURL=estilo.css.map */
