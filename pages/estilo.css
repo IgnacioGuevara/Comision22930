@@ -74,6 +74,7 @@ nav ul {
 
 .Titulo {
   text-align: center;
+  color: #86CC8C;
 }
 
 .subtitulo {
@@ -88,7 +89,7 @@ nav ul {
   padding-bottom: 20px;
 }
 
-ul li a {
+ul a {
   text-decoration: none;
   font-size: 1rem;
   color: #86CC8C;
@@ -98,7 +99,7 @@ ul li a {
   padding: 12px;
 }
 
-ul li a:hover {
+ul a:hover {
   text-decoration: none;
   font-size: 1rem;
   color: #86CC8C;
@@ -112,6 +113,9 @@ ul li a:hover {
     font-size: 0.8rem;
     font-weight: 350;
     line-height: 1;
+  }
+  .interior {
+    width: auto;
   }
   .container {
     color: #86CC8C;
@@ -157,6 +161,18 @@ ul li a:hover {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+  }
+  .Titulo {
+    text-align: center;
+    color: #86CC8C;
+  }
+  .interior {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    height: auto;
+    width: auto;
   }
   .container {
     color: #86CC8C;

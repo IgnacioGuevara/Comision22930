@@ -40,19 +40,24 @@ nav{
     justify-content: space-between;
 
 }
-nav div{
+nav {
+    div{
     width: 20%;
     height: 100%;
+    }
 }
-nav ul{
+nav{ 
+    ul{
     list-style: none;
     display: flex;
     width: 30%;
     height: 100%;
     justify-content: space-around;
+    }
 }
 .Titulo{
     text-align: center;
+    color: $color1;
 }
 .subtitulo{
     text-align: center;
@@ -66,17 +71,21 @@ nav ul{
     margin: 16px;
     padding-bottom: 20px;
 }
-ul li a{
+ul{ 
+    a{
     text-decoration: none;
     font-size: 1rem;
     color:$color1;
     display: flex;
     padding: 12px;
+    }
 }
-ul li a:hover {
+ul{
+    a:hover{
     text-decoration: none;
     font-size: 1rem;
     color: $color1;
+    }
 }
 
 @media screen and (max-width:1269px){
@@ -88,7 +97,9 @@ ul li a:hover {
     font-weight: 350;
     line-height: 1;
 }
-
+.interior{
+    width: auto;
+}
 .container{
     color: $color1;
     text-align: center;
@@ -144,6 +155,18 @@ $paleta:(
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+}
+.Titulo{
+    text-align: center;
+    color: $color1;
+}
+.interior{
+    display: block;
+    margin-right: auto;
+    margin-left:auto ;
+    padding: 5px;
+    height: auto;
+    width: auto;
 }
 .container{
     color: $color1;
