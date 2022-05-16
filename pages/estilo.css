@@ -105,29 +105,102 @@ ul a:hover {
   color: #86CC8C;
 }
 
-@media screen and (max-width: 1269px) {
+@media screen and (max-width: 319px) {
   .main {
     color: black;
-    margin: 0;
+    margin: 30px;
     padding: 0 auto;
-    font-size: 0.8rem;
-    font-weight: 350;
-    line-height: 1;
+    font-size: 0.5rem;
+    font-weight: 300;
+    line-height: 0.8;
+  }
+  .Titulo {
+    text-align: center;
+    color: #86CC8C;
   }
   .interior {
-    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   .container {
     color: #86CC8C;
     text-align: center;
   }
-  .menú, .menuNuevo {
+  .menú {
+    font-size: 1.5rem;
+    display: block;
+    margin: 30px;
     text-align: center;
     color: #86CC8C;
     border: 1px solid black;
   }
-  .menuNuevo {
+  .imgs {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .item {
+    margin: 10px;
+    height: 280px;
+    width: auto;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transition: height 120px 2.7s;
+    transition: height 120px 2.7s;
+  }
+  .colores-red {
+    border: 3px solid red;
+  }
+  .colores-orange {
+    border: 3px solid orange;
+  }
+  .colores-purple {
+    border: 3px solid purple;
+  }
+  .item:hover {
+    height: 300px;
+  }
+  .container1 {
     color: #86CC8C;
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .main {
+    color: black;
+    margin: 30px;
+    padding: 0 auto;
+    font-size: 0.8rem;
+    font-weight: 350;
+    line-height: 1;
+  }
+  .Titulo {
+    text-align: center;
+    color: #86CC8C;
+  }
+  .interior {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .container {
+    color: #86CC8C;
+    text-align: center;
+  }
+  .menú {
+    display: block;
+    margin: 30px;
+    text-align: center;
+    color: #86CC8C;
+    border: 1px solid black;
+  }
+  .imgs {
+    margin-right: auto;
+    margin-left: auto;
   }
   .item {
     margin: 10px;
@@ -156,7 +229,7 @@ ul a:hover {
 @media screen and (min-width: 1270px) {
   .main {
     color: black;
-    margin: 0;
+    margin: 30px;
     padding: 0 auto;
     font-size: 1rem;
     font-weight: 400;
@@ -167,7 +240,6 @@ ul a:hover {
     color: #86CC8C;
   }
   .interior {
-    display: block;
     margin-right: auto;
     margin-left: auto;
     padding: 5px;
@@ -184,10 +256,15 @@ ul a:hover {
         grid-template-rows: auto;
     text-align: center;
   }
-  .menú, .menuNuevo {
-    color: #86CC8C;
+  .menú {
+    margin: 30px;
     text-align: center;
     border: 1px solid black;
+    color: #86CC8C;
+  }
+  .imgs {
+    margin-right: auto;
+    margin-left: auto;
   }
   .item {
     margin: 10px;

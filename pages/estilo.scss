@@ -88,35 +88,201 @@ ul{
     }
 }
 
-@media screen and (max-width:1269px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:319px){
 .main{
     color: black;
-    margin: 0;
+    margin: 30px;
     padding: 0 auto;
-    font-size: 0.8rem;
-    font-weight: 350;
-    line-height: 1;
+    font-size: 0.5rem;
+    font-weight: 300;
+    line-height: 0.8;
+}
+.Titulo {
+    text-align: center;
+    color: $color1;
 }
 .interior{
-    width: auto;
+    margin-right: auto;
+    margin-left:auto ;
+    padding: 5px;
+    transform: scale(0.5);
 }
 .container{
     color: $color1;
     text-align: center;
 }
 .menú{
+    font-size: 1.5rem;
+    display: block;
+    margin: 30px;
     text-align: center;
     color: $color1;
     border: 1px solid black;
 }
+.imgs{
+    text-align: left;
+    font-size: 1.5rem;
+}
 
-.menuNuevo{
-    @extend .menú;
-        color: $color1;
+.item{
+    margin: 10px;
+    height: 280px;
+    width: auto;
+    transform: scale(0.5);
+    transition: height 120px 2.7s;
+}
+
+$paleta:(
+    col1: red,
+    col2: orange,
+    col3: purple
+    );
+
+@each $sizes, $color in $paleta{
+    .colores-#{$color}{
+        border: 3px solid $color;
+    }
+}
+
+.item:hover{
+    height: 300px;
+}
+
+
+.container1{
+    color: $color1;
+}
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1269px){
+.main{
+    color: black;
+    margin: 30px;
+    padding: 0 auto;
+    font-size: 0.8rem;
+    font-weight: 350;
+    line-height: 1;
+}
+.Titulo {
+    text-align: center;
+    color: $color1;
+}
+.interior{
+    margin-right: auto;
+    margin-left:auto ;
+    padding: 5px;
+    transform: scale(1);
+}
+.container{
+    color: $color1;
+    text-align: center;
+}
+.menú{
+    display: block;
+    margin: 30px;
+    text-align: center;
+    color: $color1;
+    border: 1px solid black;
+}
+.imgs{
+    margin-right:auto;
+    margin-left: auto;
+}
 
 .item{
     margin: 10px;
@@ -147,10 +313,11 @@ $paleta:(
 }
 }
 
+
 @media screen and (min-width:1270px){
 .main{
     color: black;
-    margin: 0;
+    margin: 30px;
     padding: 0 auto;
     font-size: 1rem;
     font-weight: 400;
@@ -161,7 +328,6 @@ $paleta:(
     color: $color1;
 }
 .interior{
-    display: block;
     margin-right: auto;
     margin-left:auto ;
     padding: 5px;
@@ -178,9 +344,14 @@ $paleta:(
 
 
 .menú{
-    color: $color1;
+    margin: 30px;
     text-align: center;
     border: 1px solid black;
+    color: $color1;
+}
+.imgs{
+    margin-right:auto;
+    margin-left: auto;
 }
 
 .item{
@@ -402,4 +573,3 @@ input{
     margin: 0 auto;
     padding-bottom:14%;
 }
-
