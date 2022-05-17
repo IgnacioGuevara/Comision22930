@@ -105,7 +105,7 @@ ul a:hover {
   color: #86CC8C;
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 320px) {
   .main {
     color: black;
     margin: 30px;
@@ -393,6 +393,7 @@ ul a:hover {
 .menu {
   text-align: center;
   color: #282828;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .categorias {
@@ -409,13 +410,20 @@ ul a:hover {
   padding: 8px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
-  border: 2px solid #282828;
+  border: solid black 2px;
 }
 
 #menuCategoria:hover {
   height: auto;
   color: #86CC8C;
   background-color: #282828;
+}
+
+.texto1 {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 12px;
+  color: gray;
 }
 
 .precio {
@@ -466,19 +474,55 @@ ul a:hover {
 }
 
 /*--------sobre-nosotros----*/
-.sobreNos {
-  color: #6bc773;
-  text-align: center;
+@media only screen and (max-width: 320px) {
+  .SobreNos {
+    font-size: 20px;
+  }
+  .text1 {
+    border: #282828 solid 2px;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  .video {
+    margin-top: 100px;
+    margin-left: 150px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 
-.text2 {
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+@media only screen and (min-width: 880px) {
+  .SobreNos {
+    font-size: 20px;
+  }
+  .text1 {
+    border: #282828 solid 2px;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  .video {
+    margin-top: 100px;
+    margin-left: 150px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
-.video {
-  color: #86CC8C;
+@media only screen and (min-width: 1270px) {
+  .SobreNos {
+    font-size: 20px;
+  }
+  .text1 {
+    border: #282828 solid 2px;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  .video {
+    margin-top: 100px;
+    margin-left: 150px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 .fooSobreNos {

@@ -97,18 +97,7 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:319px){
+@media screen and (max-width:320px){
 .main{
     color: black;
     margin: 30px;
@@ -482,6 +471,7 @@ input{
 .menu{
     text-align: center;
     color:#282828;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .categorias{
     padding: 10px;
@@ -491,12 +481,11 @@ input{
     transition: height 2s;
 }
 
-
 .transicion{
     padding: 8px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-weight: bold;
-    border: 2px solid #282828;
+    border: solid black 2px;
 }
 
 
@@ -504,9 +493,13 @@ input{
     height: auto;
     color:$color1;
     background-color: #282828;
-
 }
-
+.texto1{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 12px;
+    color: gray;
+}
 
 
 .precio{
@@ -554,18 +547,79 @@ input{
     padding-bottom: 20%;
 }
 /*--------sobre-nosotros----*/
-.sobreNos{
-    color: #6bc773;
-    text-align: center;
+@media only screen and (max-width: 320px){
+.SobreNos{
+    font-size: 20px;
 }
-.text2{
-    text-align: center;
-    font-weight: bold;
-    font-family:'Times New Roman', Times, serif
+
+.text1{
+    border:#282828 solid 2px;
+    margin-left: 40px;
+    padding: 30px;
 }
 .video{
-    color: $color1;
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: scale(0.5);
 }
+}
+
+
+
+@media only screen and (min-width: 880px){
+.SobreNos{
+    font-size: 20px;
+}
+
+.text1{
+    border:#282828 solid 2px;
+    margin-left: 40px;
+    padding: 30px;
+}
+.video{
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: scale(1.2);
+}
+}
+
+
+@media only screen and (min-width:1270px){
+.SobreNos{
+    font-size: 20px;
+}
+
+.text1{
+    border:#282828 solid 2px;
+    margin-left: 40px;
+    padding: 30px;
+}
+.video{
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: scale(1.2);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fooSobreNos{
     background-color: #282828;
     color: whitesmoke;
