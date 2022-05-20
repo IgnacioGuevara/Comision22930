@@ -14,20 +14,16 @@ h1 {
   font-size: 3em;
 }
 
-h2 {
+.h2 {
   font-size: 2.3em;
 }
 
-h3 {
+.h3 {
   font-size: 2em;
 }
 
-p {
-  font-size: 1.25;
-}
-
-ul {
-  list-style: none;
+.ul {
+  font-size: none;
 }
 
 .Header {
@@ -72,9 +68,9 @@ nav ul {
       justify-content: space-around;
 }
 
-.Titulo {
+.titulo {
   text-align: center;
-  color: #86CC8C;
+  color: black;
 }
 
 .subtitulo {
@@ -114,9 +110,9 @@ ul a:hover {
     font-weight: 300;
     line-height: 0.8;
   }
-  .Titulo {
+  .titulo {
     text-align: center;
-    color: #86CC8C;
+    color: black;
   }
   .interior {
     margin-right: auto;
