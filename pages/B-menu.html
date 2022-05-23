@@ -1,76 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="El Restaurante Visubio es uno de los restaurante más modernos de la zona centrica de córdoba, con mas de 5 años de experiencia. ">
-    <meta name="Keywords" content="html, js, css, python, Restaurante, restaurante cordoba, restaurante capital, restaurante cordoba capital, restaurante visubio, pizzas, hamburgesa, comida, delivery">
+    <meta name="Description"
+        content="El Restaurante Visubio es uno de los restaurante más modernos de la zona centrica de córdoba, con mas de 5 años de experiencia. ">
+    <meta name="Keywords"
+        content="html, js, css, python, Restaurante, restaurante cordoba, restaurante capital, restaurante cordoba capital, restaurante visubio, pizzas, hamburgesa, comida, delivery">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Restaurante visubio | menú</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="../imagenes/icono.png">
 </head>
+
 <body>
     <header>
-        <header class="HeaderMenu">
-            <div class="containerMenu">
-                <nav>
-                    <a href="../index.html"><p class="logo"> Restaurante <br> Visubio</p> </a>
-                    <ul>
-                        <li><a href="../index.html" class="active">Home</a></li>
-                        <li><a href="./B-menu.html" class="active">Menú</a</li>
-                        <li><a href="./C-contactos.html"class="active">Contactos</a></li>
-                        <li><a href="./D-sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
-                        <li><a href="./A-Reservas.html" class="active">Reservas</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
+            <div class="container">
+                <a class="navbar-brand " href="../index.html">Restaurante Visubio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./B-menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./C-contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./D-sobre-nosotros.html">Sobre Nostros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./A-Reservas.html">Reservas</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </header>
-
-
-
-        <h1 class="menu">MENÚ</h1>
-        <div>
-            <h3 class="categorias">Pizzas</h3>
-
-
-            <ul class="box">
-                <li class="transicion box" id="menuCategoria">Musarella <b class="precio">$200</b> <br><p class="texto1">Queso, Salsa De Tomate, Huevo, Oregano, Aceitunas.</p></li><br>
-                <li class="transicion" id="menuCategoria">Napolitana <b class="precio">$230</b><br><p class="texto1">Queso, Tomate, Salsa De Tomate, Ajo, Aceitunas.</p></li><br>
-                <li class="transicion" id="menuCategoria">Fugazeta <b class="precio">$230</b><br><p class="texto1">Queso, Cebolla, Salsa De Tomate, Aceitunas.</p></li><br>
-                <li class="transicion" id="menuCategoria">Primavera <b class="precio">$250</b><br><p class="texto1">Queso, Ajo, Salsa De Tomate, Morrón, chile, aceitunas</p></li><br>
-            </ul>
-            
-
-
-            <h3 class="categorias">Lomitos</h3>
-            <ul class="box">
-                <li class="transicion box" id="menuCategoria">Clasico <b class="precio">$200</b> <br><p class="texto1">Pan De Papa, Bife De Lomo, Huevo, Lechuga, Tomate, Mayonesa.</p></li><br>
-                <li class="transicion" id="menuCategoria">Al Plato <b class="precio">$200</b><br><p class="texto1">Bife De Lomo, Huevo, Lechuga, Tomate, Mayonesa </p></li><br>
-                <li class="transicion" id="menuCategoria">Vegetariano <b class="precio">$210</b><br><p class="texto1"> Pan De Papa, Berenjena, Lechuga, Tomate, Huevo, Zanahoria Rallada.</p></li><br>
-                <li class="transicion" id="menuCategoria">Picante <b class="precio">$280</b><br><p class="texto1"> Pan De Papa, Bife de Lomo, Salsa Picante, Morron, Lechuga, Tomate.</p></li><br>
-            </ul>
-            
-            <h3 class="categorias">Bebidas</h3>
-            <ul class="box">
-                <li class="transicion box" id="menuCategoria">Agua <b class="precio">$90</b> <br><p class="texto1">Mineral/saborizada.</p></li><br>
-                <li class="transicion" id="menuCategoria">Cerveza <b class="precio">$150</b><br><p class="texto1">Imperial/Quilmes/brahma.</p></li><br>
-                <li class="transicion" id="menuCategoria">Vinos <b class="precio">$170</b><br><p class="texto1"> malbec/Syrah/Merlot.</p></li><br>
-                <li class="transicion" id="menuCategoria">Tragos <b class="precio">$200</b><br><p class="texto1"> Mojito/Campari/Fernet/Margarita.</p></li><br>
-            </ul>
+        </nav>
+        <div class="conntenedor">
+            <h1 class="titulo">Visubio</h1>
+            <h4 class="subtitulo">¡Buon Appetito!</h4>
         </div>
-        
-        
+
+    </header>
+
+
+    <h1 class="menu">MENÚ</h1>
+    <div>
+        <h3 class="categorias">Pizzas</h3>
+
+
+        <ul class="lista">
+            <li class="transicion" id="menuCategoria">Musarella <b class="precio">$200</b><br>
+                <p class="texto1">Queso, Salsa De Tomate, Huevo, Oregano, Aceitunas.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Napolitana <b class="precio">$230</b><br>
+                <p class="texto1">Queso, Tomate, Salsa De Tomate, Ajo, Aceitunas.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Fugazeta <b class="precio">$230</b><br>
+                <p class="texto1">Queso, Cebolla, Salsa De Tomate, Aceitunas.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Primavera <b class="precio">$250</b><br>
+                <p class="texto1">Queso, Ajo, Salsa De Tomate, Morrón, chile, aceitunas</p>
+            </li>
+        </ul>
+
+
+
+        <h3 class="categorias">Lomitos</h3>
+        <ul class="lista">
+            <li class="transicion box" id="menuCategoria">Clasico <b class="precio">$200</b><br>
+                <p class="texto1">Pan De Papa, Bife De Lomo, Huevo, Lechuga, Tomate, Mayonesa.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Al Plato <b class="precio">$200</b><br>
+                <p class="texto1">Bife De Lomo, Huevo, Lechuga, Tomate, Mayonesa </p>
+            </li>
+            <li class="transicion" id="menuCategoria">Vegetariano <b class="precio">$210</b><br>
+                <p class="texto1"> Pan De Papa, Berenjena, Lechuga, Tomate, Huevo, Zanahoria Rallada.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Picante <b class="precio">$280</b><br>
+                <p class="texto1"> Pan De Papa, Bife de Lomo, Salsa Picante, Morron, Lechuga, Tomate.</p>
+            </li>
+        </ul>
+
+        <h3 class="categorias">Bebidas</h3>
+        <ul class="lista">
+            <li class="transicion box" id="menuCategoria">Agua <b class="precio">$90</b><br>
+                <p class="texto1">Mineral/saborizada.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Cerveza <b class="precio">$150</b><br>
+                <p class="texto1">Imperial/Quilmes/brahma.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Vinos <b class="precio">$170</b><br>
+                <p class="texto1"> malbec/Syrah/Merlot.</p>
+            </li>
+            <li class="transicion" id="menuCategoria">Tragos <b class="precio">$200</b><br>
+                <p class="texto1"> Mojito/Campari/Fernet/Margarita.</p>
+            </li>
+        </ul>
+    </div>
+
+
     </form>
-    
-    <h2  class="Delivery">Delivery</h2>
+
+    <h2 class="Delivery">Delivery</h2>
     <p class="pNumero">+54-0351-311-6901</p>
-    
+
     <footer class="fooMenu">
-        <p><strong>Instagram:</strong> @Visubio.oficial</p> 
+        <p><strong>Instagram:</strong> @Visubio.oficial</p>
         <p><strong>Facebook:</strong> Visubio</p>
         <p><strong>Twitter:</strong> @visubio-web</p>
         <p><strong>Whats-app:</strong> +54 0351-311-6901 </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+
 </html>

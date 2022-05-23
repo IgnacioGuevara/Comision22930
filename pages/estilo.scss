@@ -1,9 +1,13 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 $color1: #86CC8C;
 $color2: #C7FFCB;
-
+.fondo{
+    background-color: $color2;
+}
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -39,12 +43,10 @@ $ul: map-get($map: $headings, $key: ul);
     font-size: $ul;
 }
 
-
 .Header{
     background-color: $color1;
-    margin: 0;
-    
 }
+
 .logo{
     margin: 0;
     padding:25px 30px;
@@ -57,36 +59,15 @@ $ul: map-get($map: $headings, $key: ul);
     width: $width;
 }
 
-nav{
-    text-align: center;
-    @include size(80px, 100%);
-    background-color: #6c6c6c;
-    display: flex;
-    justify-content: space-between;
 
-}
-nav {
-    div{
-    width: 20%;
-    height: 100%;
-    }
-}
-nav{ 
-    ul{
-    list-style: none;
-    display: flex;
-    width: 30%;
-    height: 100%;
-    justify-content: space-around;
-    }
-}
 .titulo{
     text-align: center;
     color: black;
+    background-color: $color1;
 }
 .subtitulo{
     text-align: center;
-    color: $color2;
+    color: $color1;
 }
 
 
@@ -95,23 +76,9 @@ nav{
     font-size: 20px;
     margin: 16px;
     padding-bottom: 20px;
+    background-color: $color1;
 }
-ul{ 
-    a{
-    text-decoration: none;
-    font-size: 1rem;
-    color:$color1;
-    display: flex;
-    padding: 12px;
-    }
-}
-ul{
-    a:hover{
-    text-decoration: none;
-    font-size: 1rem;
-    color: $color1;
-    }
-}
+
 
 
 
@@ -188,78 +155,6 @@ $paleta:(
     color: $color1;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -402,7 +297,7 @@ $paleta:(
     margin: 0;
     padding-bottom:1%;
 }
-.fooNuestro{ 
+.fooNuestro{
     margin: 2px;
     padding: 2px;
 }
@@ -428,16 +323,13 @@ $paleta:(
     margin: 0;
 }
 
-.active{
-    color: white;
-}
 /*----------------------------Reserva-----------------------*/
 .Header{
     background-color: $color1;
     margin: 0;
 
 }
-.logoReserva{ 
+.logoReserva{
     padding:0 30px;
     font-weight: bold;
     color: $color1;
@@ -456,7 +348,7 @@ input{
     border-color:$color2;
     border-radius: 15px;
     border-style:double;
-}    
+}
 }
 
 
@@ -488,16 +380,28 @@ input{
     color: whitesmoke;
 }
 /*-------------menú-------------*/
-
+.justify-content-end{
+    justify-content: flex-end;
+}
+.conntenedor{
+    background-color: $color1;
+}
+.subtitulo{
+    color:$color2;
+    padding-bottom: 10px;
+    margin-top: 6px;
+}
 .logoMenu{
     padding:0 30px;
     font-weight: bold;
-    color: $color1;
+    color: $color2;
+
 }
 .menu{
     text-align: center;
     color:#282828;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 40px;
 }
 .categorias{
     padding: 10px;
@@ -506,15 +410,17 @@ input{
 #menuCategoria{
     transition: height 2s;
 }
-
 .transicion{
     padding: 8px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-weight: bold;
     border: solid black 2px;
+    margin-bottom:15px;
 }
 
-
+.lista{
+    list-style-type:none;
+}
 #menuCategoria:hover{
     height: auto;
     color:$color1;
@@ -533,12 +439,13 @@ input{
 }
 .Delivery{
     color: #6bc773;
-    text-align: center;
+    text-align: right;
+    margin-right: 50px;
 }
 .pNumero{
     margin: 30px;
     color: $color1;
-    text-align: center;
+    text-align: right;
 }
 
 
@@ -552,18 +459,37 @@ input{
 }
 
 /*--------------Contactos------------*/
-.logoContactos{
-    padding:0 30px;
-    font-weight: bold;
-    color: $color1;
+.formContactos{
+    width: 400px;
+    background-color: $color1;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
 }
 .formContactos{
-    background-color:$color1;
-    width: 500px;
-    text-align:center;
-    margin: auto;
-    border-color: #6c6c6c;
-    font-size: 1em;
+    p{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+    a{
+        color: white;
+        text-align: none;
+    }
+    a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+}
+.controls{
+    width: 100%;
+    background-color: $color2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: solid 1px white;
 }
 .fooContactos{
     background-color: #282828;
@@ -572,64 +498,56 @@ input{
     margin: 0 auto;
     padding-bottom: 20%;
 }
+
 /*--------sobre-nosotros----*/
 @media only screen and (max-width: 320px){
-.SobreNos{
-    font-size: 20px;
+
+.video{
+    width: 340px;
+    height: 200px;
+    margin: auto;
+    padding: auto;
 }
 
+}
+@media  screen and (min-width: 880px){
+.text-box{
+    padding: auto;
+    margin: auto;
+    border: $color1 5px groove;
+}
 .text1{
-    border:#282828 solid 2px;
-    margin-left: 40px;
-    padding: 30px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}    
+.text2{
+    color: black
 }
 .video{
-    margin-top: 100px;
-    margin-left: 150px;
-    transform: scale(0.5);
+    margin: 40px;
 }
 }
 
-
-
-@media only screen and (min-width: 880px){
-.SobreNos{
-    font-size: 20px;
+@media screen and (max-width: 880px){
+.video{
+    transform: scale(0.7);
 }
-
+.text-box{
+    padding: auto;
+    margin: auto;
+    border: $color1 5px groove;
+}
 .text1{
-    border:#282828 solid 2px;
-    margin-left: 40px;
-    padding: 30px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}    
+.text2{
+    color: black
 }
 .video{
-    margin-top: 100px;
-    margin-left: 150px;
-    transform: scale(1.2);
+    margin: 40px;
 }
 }
-
-
-@media only screen and (min-width:1270px){
-.SobreNos{
-    font-size: 20px;
-}
-
-.text1{
-    border:#282828 solid 2px;
-    margin-left: 40px;
-    padding: 30px;
-}
-.video{
-    margin-top: 100px;
-    margin-left: 150px;
-    transform: scale(1.2);
-}
-}
-
-
-
-
 
 
 

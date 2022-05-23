@@ -12,24 +12,40 @@
     <link rel="shortcut icon" href="./imagenes/icono.png">
 </head>
 <body>
-<header class="Header">
-    <div>
-        <nav>
-            <a href="./index.html"><p class="logo"> Restaurante <br> Visubio</p> </a>
-            
-            <ul>            
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./pages/B-menu.html" class="active">Menú</a</li>
-                <li><a href="./pages/C-contactos.html"class="active">Contactos</a></li>
-                <li><a href="./pages/D-sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
-                <li><a href="./pages/A-Reservas.html" class="active">Reservas</a></li>
-            </ul>
-        </nav>
-    </div>
-    <section>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="./index.html">Restaurante Visubio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/B-menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/C-contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/D-sobre-nosotros.html">Sobre Nostros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/A-Reservas.html">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="conntenedor">
         <h1 class="titulo">Visubio</h1>
         <h4 class="subtitulo">¡Buon Appetito!</h4>
-    </section>
+    </div>
+
 </header>
 <div class="row">
     <img class="interior col-5" src="./pages/interiorRestaurante.jpg" alt="restaurante">

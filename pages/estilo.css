@@ -1,7 +1,13 @@
 @charset "UTF-8";
 * {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.fondo {
+  background-color: #C7FFCB;
 }
 
 body {
@@ -28,7 +34,6 @@ h1 {
 
 .Header {
   background-color: #86CC8C;
-  margin: 0;
 }
 
 .logo {
@@ -39,43 +44,15 @@ h1 {
   text-decoration: none;
 }
 
-nav {
-  text-align: center;
-  height: 80px;
-  width: 100%;
-  background-color: #6c6c6c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav div {
-  width: 20%;
-  height: 100%;
-}
-
-nav ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30%;
-  height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .titulo {
   text-align: center;
   color: black;
+  background-color: #86CC8C;
 }
 
 .subtitulo {
   text-align: center;
-  color: #C7FFCB;
+  color: #86CC8C;
 }
 
 .RestauranteVisubio {
@@ -83,22 +60,7 @@ nav ul {
   font-size: 20px;
   margin: 16px;
   padding-bottom: 20px;
-}
-
-ul a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #86CC8C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 12px;
-}
-
-ul a:hover {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #86CC8C;
+  background-color: #86CC8C;
 }
 
 @media screen and (max-width: 320px) {
@@ -318,10 +280,6 @@ ul a:hover {
   margin: 0;
 }
 
-.active {
-  color: white;
-}
-
 /*----------------------------Reserva-----------------------*/
 .Header {
   background-color: #86CC8C;
@@ -380,16 +338,33 @@ ul a:hover {
 }
 
 /*-------------menú-------------*/
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.conntenedor {
+  background-color: #86CC8C;
+}
+
+.subtitulo {
+  color: #C7FFCB;
+  padding-bottom: 10px;
+  margin-top: 6px;
+}
+
 .logoMenu {
   padding: 0 30px;
   font-weight: bold;
-  color: #86CC8C;
+  color: #C7FFCB;
 }
 
 .menu {
   text-align: center;
   color: #282828;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
 }
 
 .categorias {
@@ -407,6 +382,11 @@ ul a:hover {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   border: solid black 2px;
+  margin-bottom: 15px;
+}
+
+.lista {
+  list-style-type: none;
 }
 
 #menuCategoria:hover {
@@ -428,13 +408,14 @@ ul a:hover {
 
 .Delivery {
   color: #6bc773;
-  text-align: center;
+  text-align: right;
+  margin-right: 50px;
 }
 
 .pNumero {
   margin: 30px;
   color: #86CC8C;
-  text-align: center;
+  text-align: right;
 }
 
 .fooMenu {
@@ -446,19 +427,39 @@ ul a:hover {
 }
 
 /*--------------Contactos------------*/
-.logoContactos {
-  padding: 0 30px;
-  font-weight: bold;
-  color: #86CC8C;
+.formContactos {
+  width: 400px;
+  background-color: #86CC8C;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  color: white;
 }
 
-.formContactos {
-  background-color: #86CC8C;
-  width: 500px;
+.formContactos p {
+  height: 40px;
   text-align: center;
-  margin: auto;
-  border-color: #6c6c6c;
-  font-size: 1em;
+  font-size: 18px;
+}
+
+.formContactos a {
+  color: white;
+  text-align: none;
+}
+
+.formContactos a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.controls {
+  width: 100%;
+  background-color: #C7FFCB;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: solid 1px white;
 }
 
 .fooContactos {
@@ -471,53 +472,51 @@ ul a:hover {
 
 /*--------sobre-nosotros----*/
 @media only screen and (max-width: 320px) {
-  .SobreNos {
-    font-size: 20px;
-  }
-  .text1 {
-    border: #282828 solid 2px;
-    margin-left: 40px;
-    padding: 30px;
-  }
   .video {
-    margin-top: 100px;
-    margin-left: 150px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    width: 340px;
+    height: 200px;
+    margin: auto;
+    padding: auto;
   }
 }
 
-@media only screen and (min-width: 880px) {
-  .SobreNos {
-    font-size: 20px;
+@media screen and (min-width: 880px) {
+  .text-box {
+    padding: auto;
+    margin: auto;
+    border: #86CC8C 5px groove;
   }
   .text1 {
-    border: #282828 solid 2px;
-    margin-left: 40px;
-    padding: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .text2 {
+    color: black;
   }
   .video {
-    margin-top: 100px;
-    margin-left: 150px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    margin: 40px;
   }
 }
 
-@media only screen and (min-width: 1270px) {
-  .SobreNos {
-    font-size: 20px;
+@media screen and (max-width: 880px) {
+  .video {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .text-box {
+    padding: auto;
+    margin: auto;
+    border: #86CC8C 5px groove;
   }
   .text1 {
-    border: #282828 solid 2px;
-    margin-left: 40px;
-    padding: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .text2 {
+    color: black;
   }
   .video {
-    margin-top: 100px;
-    margin-left: 150px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    margin: 40px;
   }
 }
 
