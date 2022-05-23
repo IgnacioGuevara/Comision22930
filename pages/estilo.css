@@ -286,6 +286,55 @@ h1 {
   margin: 0;
 }
 
+.bodyReserva {
+  padding: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
+  height: auto;
+  border: groove #86CC8C 5px;
+}
+
+.formReserva {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: auto;
+}
+
+.reserva {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+.box-reserva {
+  text-align: left;
+  width: 100%;
+  height: auto;
+}
+
+.controles-reserva {
+  padding: 6px;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.nombres-reservas {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.botones-reserva {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
 .logoReserva {
   padding: 0 30px;
   font-weight: bold;
@@ -427,39 +476,47 @@ h1 {
 }
 
 /*--------------Contactos------------*/
-.formContactos {
-  width: 400px;
-  background-color: #86CC8C;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  color: white;
-}
-
-.formContactos p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.formContactos a {
-  color: white;
-  text-align: none;
-}
-
-.formContactos a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.controls {
-  width: 100%;
-  background-color: #C7FFCB;
+.box-contactos {
+  border: groove #86CC8C 5px;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  border: solid 1px white;
+  background-color: #86CC8C;
+}
+
+.contrataciones {
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+.formContactos {
+  text-align: center;
+  padding: auto;
+  margin: auto;
+  display: block;
+}
+
+.controles-contacto {
+  margin: auto;
+  padding: 5px;
+  display: block;
+}
+
+.nombres-contactos {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+
+.terminos {
+  display: block;
 }
 
 .fooContactos {

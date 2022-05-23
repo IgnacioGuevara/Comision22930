@@ -52,24 +52,29 @@
 
     <main class="bodyReserva " >
         <form class="formReserva" action="enviar.php" method="post" enctype="text/plain">
-            <fieldset><legend> Reservas</legend>
-                <p>Ten en cuenta que los dias <Strong>Lunes-Martes-Miercoles</Strong> el local se encuentra cerrado.</p>
-                <label for="">Nombre</label>
-                <input type="text" placeholder="Escribe tu nombre"> <br>
-                <label for="">Apellido</label>
-                <input type="text" placeholder="Escribe tu apellido">
-                <br>
-                <label for="">Correo electronico</label>
-                <input type="mail" name="correo" placeholder="Escribe tu correo"> <br>
-                <label for="">Telefono</label>
-                <input type="number"  placeholder="Escribe tu numero"><br>
-                </select> <br>
-                <label for="">Seleccione el dia y horario de su Reserva.</label>
-                <input type="date">
-                <input type="time"><br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar"><br>
+            <fieldset class="box-reserva">
+                <legend class="reserva"> Reservas</legend>
+
+                <label class="nombres-reservas" for="">Nombre</label>
+                <input class="controles-reserva" type="text" placeholder="Escribe tu nombre">
+
+                <label class="nombres-reservas" for="">Apellido</label>
+                <input class="controles-reserva" type="text" placeholder="Escribe tu apellido">
                 
+                <label class="nombres-reservas" for="">Correo electronico</label>
+                <input class="controles-reserva" type="mail" name="correo" placeholder="Escribe tu correo">
+
+                <label class="nombres-reservas" for="">Telefono</label>
+                <input class="controles-reserva" type="number"  placeholder="Escribe tu numero">
+
+                <label class="nombres-reservas" for="">Seleccione el dia y horario de su Reserva.</label>
+                <input class="controles-reserva" type="date">
+                <input class="controles-reserva" type="time">
+                
+                <div>
+                <input class="botones-reserva" type="submit" value="Enviar">
+                <input class="botones-reserva" type="reset" value="Borrar">
+                </div>
             </fieldset>
         </form>
         
