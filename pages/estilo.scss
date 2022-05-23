@@ -78,18 +78,13 @@ $ul: map-get($map: $headings, $key: ul);
     padding-bottom: 20px;
     background-color: $color1;
 }
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:520px){
+.item{
+    transform: scale(0.6);
+}
+}
 @media screen and (max-width:320px){
+
 .main{
     color: black;
     margin: 30px;
@@ -108,6 +103,7 @@ $ul: map-get($map: $headings, $key: ul);
     margin-left:auto ;
     padding: 5px;
     transform: scale(0.5);
+    border-radius: 15px;
 }
 .container{
     color: $color1;
@@ -120,6 +116,7 @@ $ul: map-get($map: $headings, $key: ul);
     text-align: center;
     color: $color1;
     border: 1px solid black;
+    border-radius: 15px;
 }
 .imgs{
     text-align: left;
@@ -127,11 +124,11 @@ $ul: map-get($map: $headings, $key: ul);
 }
 
 .item{
-    margin: 10px;
-    height: 280px;
-    width: auto;
-    transform: scale(0.5);
-    transition: height 120px 2.7s;
+    height: auto;
+    width: 200px;
+
+    transition: height 20px  2.7s;
+    border-radius: 15px;
 }
 
 $paleta:(
@@ -142,7 +139,7 @@ $paleta:(
 
 @each $sizes, $color in $paleta{
     .colores-#{$color}{
-        border: 3px solid $color;
+        border: 3px groove $color;
     }
 }
 
@@ -177,6 +174,7 @@ $paleta:(
     margin-left:auto ;
     padding: 5px;
     transform: scale(1);
+    border-radius: 15px;
 }
 .container{
     color: $color1;
@@ -188,6 +186,7 @@ $paleta:(
     text-align: center;
     color: $color1;
     border: 1px solid black;
+    border-radius: 15px;
 }
 .imgs{
     margin-right:auto;
@@ -196,9 +195,10 @@ $paleta:(
 
 .item{
     margin: 10px;
-    height: 280px;
-    width: auto;
-    transition: height 280px 2.7s;
+    height: auto;
+    width: 250px;
+    transition: height 20px 2.7s;
+    border-radius: 15px;
 }
 
 $paleta:(
@@ -243,6 +243,7 @@ $paleta:(
     padding: 5px;
     height: auto;
     width: auto;
+    border-radius: 15px;
 }
 .container{
     color: $color1;
@@ -258,6 +259,7 @@ $paleta:(
     text-align: center;
     border: 1px solid black;
     color: $color1;
+    border-radius: 15px;
 }
 .imgs{
     margin-right:auto;
@@ -267,9 +269,10 @@ $paleta:(
 .item{
     margin: 10px;
     border: solid black 2px;
-    height: 280px;
-    width: auto;
-    transition: height 280px 2.7s;
+    height: auto;
+    width: 300px;
+    transition: height 20px 2.7s;
+    border-radius: 15px;
 }
 $paleta:(
     col1: red,
@@ -427,6 +430,7 @@ input{
 }
 .conntenedor{
     background-color: $color1;
+    border-radius: 15px;
 }
 .subtitulo{
     color:$color2;
@@ -457,6 +461,7 @@ input{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-weight: bold;
     border: solid black 2px;
+    border-radius: 15px;
     margin-bottom:15px;
 }
 
@@ -555,6 +560,7 @@ input{
     height: 200px;
     margin: auto;
     padding: auto;
+    border-radius: 15px;
 }
 
 }
@@ -573,12 +579,14 @@ input{
 }
 .video{
     margin: 40px;
+    border-radius: 15px;
 }
 }
 
 @media screen and (max-width: 880px){
 .video{
     transform: scale(0.7);
+    border-radius: 15px;
 }
 .text-box{
     padding: auto;
