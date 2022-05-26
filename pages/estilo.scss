@@ -485,14 +485,16 @@ input{
     float: right;
 }
 .Delivery{
+    margin: 15px;
     color: #6bc773;
-    text-align: right;
-    margin-right: 50px;
+    display: block;
+    text-align: center;
 }
 .pNumero{
-    margin: 30px;
+    margin: 20px;
     color: $color1;
-    text-align: right;
+    display: block;
+    text-align: center;
 }
 
 
@@ -567,7 +569,7 @@ input{
 @media  screen and (min-width: 880px){
 .text-box{
     padding: auto;
-    margin: auto;
+    margin:auto;
     border: $color1 5px groove;
 }
 .text1{
@@ -578,7 +580,7 @@ input{
     color: black
 }
 .video{
-    margin: 40px;
+    margin: 30px;
     border-radius: 15px;
 }
 }
@@ -601,7 +603,7 @@ input{
     color: black
 }
 .video{
-    margin: 40px;
+    width: 100%;
 }
 }
 

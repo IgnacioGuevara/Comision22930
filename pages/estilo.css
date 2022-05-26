@@ -471,15 +471,17 @@ h1 {
 }
 
 .Delivery {
+  margin: 15px;
   color: #6bc773;
-  text-align: right;
-  margin-right: 50px;
+  display: block;
+  text-align: center;
 }
 
 .pNumero {
-  margin: 30px;
+  margin: 20px;
   color: #86CC8C;
-  text-align: right;
+  display: block;
+  text-align: center;
 }
 
 .fooMenu {
@@ -567,7 +569,7 @@ h1 {
     color: black;
   }
   .video {
-    margin: 40px;
+    margin: 30px;
     border-radius: 15px;
   }
 }
@@ -591,7 +593,7 @@ h1 {
     color: black;
   }
   .video {
-    margin: 40px;
+    width: 100%;
   }
 }
 
