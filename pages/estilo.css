@@ -454,8 +454,8 @@ h1 {
 
 .lista {
   list-style-type: none;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 40px;
 }
 
 #menuCategoria:hover {
@@ -520,7 +520,7 @@ h1 {
 
 .box {
   background-color: #8ec5928a;
-  border: #86CC8C 1px solid;
+  border: black 2px solid;
   border-radius: 40px;
   padding: 25px;
 }

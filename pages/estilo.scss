@@ -59,7 +59,6 @@ $ul: map-get($map: $headings, $key: ul);
     width: $width;
 }
 
-
 .titulo{
     text-shadow: 1px 1px 2px black;
     text-align: center;
@@ -473,8 +472,8 @@ input{
 
 .lista{
     list-style-type:none;
-    margin-left: 20px;
-    margin-right:20px; 
+    margin-left: 50px;
+    margin-right:40px; 
 }
 #menuCategoria:hover{
     height: auto;
@@ -536,7 +535,7 @@ input{
 }
 .box{
     background-color:#8ec5928a;
-    border: $color1 1px solid;
+    border: black 2px solid;
     border-radius: 40px;
     padding: 25px;
 }
