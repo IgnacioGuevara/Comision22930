@@ -45,6 +45,7 @@ h1 {
 }
 
 .titulo {
+  text-shadow: 1px 1px 2px black;
   text-align: center;
   color: black;
   background-color: #86CC8C;
@@ -89,9 +90,9 @@ h1 {
     padding: 5px;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    border-radius: 15px;
+    border-radius: 60px;
   }
-  .container {
+  .container3 {
     color: #86CC8C;
     text-align: center;
   }
@@ -151,9 +152,9 @@ h1 {
     padding: 5px;
     -webkit-transform: scale(1);
             transform: scale(1);
-    border-radius: 15px;
+    border-radius: 60px;
   }
-  .container {
+  .container3 {
     color: #86CC8C;
     text-align: center;
   }
@@ -213,9 +214,9 @@ h1 {
     padding: 5px;
     height: auto;
     width: auto;
-    border-radius: 15px;
+    border-radius: 60px;
   }
-  .container {
+  .container2 {
     color: #86CC8C;
     display: -ms-grid;
     display: grid;
@@ -425,12 +426,14 @@ h1 {
 
 .menu {
   text-align: center;
-  color: #282828;
+  color: #86CC8C;
+  text-shadow: 1px 1px 3px black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 40px;
 }
 
 .categorias {
+  text-shadow: 1px 1px 4px  black;
   padding: 10px;
   color: #6bc773;
 }
@@ -451,6 +454,8 @@ h1 {
 
 .lista {
   list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #menuCategoria:hover {
@@ -475,6 +480,7 @@ h1 {
   color: #6bc773;
   display: block;
   text-align: center;
+  text-shadow: 1px 1px 5px black;
 }
 
 .pNumero {
@@ -506,42 +512,43 @@ h1 {
 }
 
 .contrataciones {
-  text-align: center;
-  margin: auto;
-  padding: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
+  border-bottom: 2px #4abb54 solid;
+  border-radius: 20px;
 }
 
-.formContactos {
-  text-align: center;
-  padding: auto;
-  margin: auto;
-  display: block;
+.box {
+  background-color: #8ec5928a;
+  border: #86CC8C 1px solid;
+  border-radius: 40px;
+  padding: 25px;
 }
 
-.controles-contacto {
-  margin: auto;
-  padding: 5px;
-  display: block;
+.border-text {
+  padding: 2px;
+  border-bottom: #4abb54 solid 2px;
+  border-radius: 50px;
 }
 
-.nombres-contactos {
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  display: block;
+.terminos {
   font-weight: bold;
+}
+
+.cita2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.contrataciones {
+  text-align: center;
+  margin: auto;
+  padding: 5px;
 }
 
 .terminos {
   display: block;
-}
-
-.fooContactos {
-  background-color: #282828;
-  color: whitesmoke;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 20%;
 }
 
 /*--------sobre-nosotros----*/
@@ -595,13 +602,5 @@ h1 {
   .video {
     width: 100%;
   }
-}
-
-.fooSobreNos {
-  background-color: #282828;
-  color: whitesmoke;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 14%;
 }
 /*# sourceMappingURL=estilo.css.map */
