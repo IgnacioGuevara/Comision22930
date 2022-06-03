@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content=" Reservas para restaurante visubio. ">
-    <meta name="Keywords" content="Reservas, Reservas Restaurante cordoba, restaurante visubio, pizzas, hamburgesa, comida">
+    <meta name="Keywords"
+        content="Reservas, Reservas Restaurante cordoba, restaurante visubio, pizzas, hamburgesa, comida">
     <link rel="shortcut icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../pages/estilo.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Restaurante Visubio | Reservas</title>
 </head>
+
 <body class="fondo">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-success">
@@ -48,36 +52,54 @@
         </div>
 
     </header>
+    <main class="container main-reserva">
+        <div class="row ">
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 box-reserva">
+                <h2 class=" contrataciones">Reserva</h2>
+                <form class="row g-3">
+                    <div class="col-md-6 p-2">
+                        <h5 class="text-center">Nombre</h5>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <h5 class="text-center">Apellido</h5>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="col-12 p-2">
+                        <h5 class="text-center">Correo Electronico</h5>
+                        <input type="email" class="form-control" id="exampleInputEmail1" >
+                    </div>
+                    <div class="col-12 text-center">
+                        <h5 >Telefono</h5>
+                        <input class="form-control " type="number">
+                    </div>
+                    <div class="col-6 text-center">
+                        <h5 class=" dia-reserva">Dia de Reserva</h5>
+                        <input class=" form-control text-center reserva  " type="date" id="fecha">
+                    </div>
+                    <div class="col-6 text-center">
+                        <h5>Horario</h5>
+                        <input class="controles-reserva form-control" type="time">
+                    </div>
+                </form>
+            </div>
+
+            <div class=" col-sm-12 col-md-12 col-lg-5 col-xl-5 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6811.0384460217565!2d-64.18604146136737!3d-31.399817679740178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298644300d1ab%3A0x4179efd3f49c3e30!2sJuan%20del%20Campillo%20723!5e0!3m2!1ses!2sar!4v1654223184268!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
 
 
-    <main class="bodyReserva " >
-        <form class="formReserva" action="enviar.php" method="post" enctype="text/plain">
-            <fieldset class="box-reserva">
-                <legend class="reserva"> Reservas</legend>
 
-                <label class="nombres-reservas" for="">Nombre</label>
-                <input class="controles-reserva" type="text" placeholder="Escribe tu nombre">
 
-                <label class="nombres-reservas" for="">Apellido</label>
-                <input class="controles-reserva" type="text" placeholder="Escribe tu apellido">
-                
-                <label class="nombres-reservas" for="">Correo electronico</label>
-                <input class="controles-reserva" type="mail" name="correo" placeholder="Escribe tu correo">
 
-                <label class="nombres-reservas" for="">Telefono</label>
-                <input class="controles-reserva" type="number"  placeholder="Escribe tu numero">
 
-                <label class="nombres-reservas" for="">Seleccione el dia y horario de su Reserva.</label>
-                <input class="controles-reserva" type="date">
-                <input class="controles-reserva" type="time">
-                
-                <div>
-                <input class="botones-reserva" type="submit" value="Enviar">
-                <input class="botones-reserva" type="reset" value="Borrar">
-                </div>
-            </fieldset>
-        </form>
-        
+
+
+
+
+
+
     </main>
     <footer class="container-fluid">
         <div class="row p-5 bg-dark text-white">
@@ -87,13 +109,13 @@
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <p class="h4 mb-2 text-warning">SUCURSALES</p>
                 <div class="mb-3">
-                    <p class="text-secondary text-decoration-none" > Av. Buenos Aires 596</p>
+                    <p class="text-secondary text-decoration-none"> Av. Buenos Aires 596</p>
                 </div>
                 <div class="mb-2">
-                    <p class="text-secondary text-decoration-none" > Av. Cordoba 333</p>
+                    <p class="text-secondary text-decoration-none"> Av. Cordoba 333</p>
                 </div>
                 <div class="mb-2">
-                    <p class="text-secondary text-decoration-none" > Av. Mendoza 1855</p>
+                    <p class="text-secondary text-decoration-none"> Av. Mendoza 1855</p>
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
@@ -118,10 +140,16 @@
                 </div>
             </div>
 
-            
+
         </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script></body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>

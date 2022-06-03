@@ -96,6 +96,9 @@ h1 {
     color: #86CC8C;
     text-align: center;
   }
+  .link-info {
+    list-style-type: none;
+  }
   .menú {
     font-size: 1.5rem;
     display: block;
@@ -311,93 +314,19 @@ h1 {
   border: groove #86CC8C 5px;
 }
 
-.formReserva {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: auto;
-}
-
-.reserva {
-  text-align: center;
-  margin: auto;
-  padding: auto;
-}
-
 .box-reserva {
-  text-align: left;
-  width: 100%;
-  height: auto;
+  background-color: #8ec5928a;
+  border: black 2px solid;
+  border-radius: 40px;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
 }
 
-.controles-reserva {
-  padding: 6px;
-  text-align: center;
-  margin-left: 50px;
-  margin-bottom: 5px;
-}
-
-.nombres-reservas {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-}
-
-.botones-reserva {
-  text-align: center;
-  margin-top: 10px;
-  margin-left: 60px;
-}
-
-.logoReserva {
-  padding: 0 30px;
-  font-weight: bold;
-  color: #86CC8C;
-}
-
-@media only screen and (max-width: 849px) {
-  .formReserva {
-    background-color: #86CC8C;
-    width: 300px;
-    text-align: right;
-    margin: auto;
-    border-color: #6c6c6c;
-    font-size: 1em;
-  }
-  input {
-    outline: none;
-    border-color: #C7FFCB;
-    border-radius: 15px;
-    border-style: double;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .formReserva {
-    background-color: #86CC8C;
-    width: 300px;
-    text-align: right;
-    margin: auto;
-    border-color: #6c6c6c;
-    font-size: 1em;
-  }
-  input {
-    outline: none;
-    border-color: #C7FFCB;
-    border-radius: 15px;
-    border-style: double;
-  }
-}
-
-.footerReserva {
-  background-color: #282828;
-  margin: 0;
-  padding-bottom: 20%;
-  text-align: center;
-}
-
-.textoReservaFoo {
-  color: whitesmoke;
+.map {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /*-------------menú-------------*/
