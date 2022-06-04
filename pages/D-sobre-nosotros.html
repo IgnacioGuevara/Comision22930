@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="Description" content="Informacion sobre el restaurante visubio. ">
     <meta name="Keywords" content="informacion restauntate visubio, restaurante cordoba capital, restaurante visubio, pizzas, hamburgesa, comida, delivery">
     <link rel="shortcut icon" href="../imagenes/icono.png">
@@ -46,19 +47,75 @@
             <h1 class="titulo">Visubio</h1>
             <h4 class="subtitulo">¡Buon Appetito!</h4>
         </div>
-
     </header>
+
+
     <main class="container">
-        <div id="portada" class="row">
-            <div class="text-box">
-                <h4 class="text1">Sobre Nosotros</h4>
+        <div class="row">
+            <div class=" text-bo fond-color col-sm-12 col-md-10 col-lg-10 col-xl-5" data-aos="fade-down-right">
+                <h4 class="text1 text-center">Sobre Nosotros</h4>
                 <p class="text2">
                 Somos un Restaurante con mas de 10 años de experiecia, tenemos una gran variedad de platos, desde platos clasicos, picantes, y vegetarianos. Ingresa a la seccion de Menú para ver nuestra carta y emocionate con todas las variedades que tenemos. Podes venir al restaurante cuando mas te guste, abajo de la pagina tendras los horarios de atencion. Y si queres estar mas tranquilo y comer en tu casa contamos con la posibilidad de Delivery para llevar todo el menú que pedis directamente a  tu casa.
                 </p>
             </div>
-        </div>
-        <div class="container">
-            <video class="video" src="./restaurante.mp4" controls ></video>
+            
+            <div class=" col-sm-10 col-md-8 col-lg-8 col-xl-5 mt-3">
+                <video class="video " src="./restaurante.mp4" data-aos="fade-down-left"></video>
+            </div>
+
+
+
+            <div class="container row  texto-abuelo">
+
+                <img class="abuelo col-sm-8 col-md-8 col-lg-5 col-xl-5 mb-3 " src="../imagenes/abuelo.jpg" alt="abuelo" data-aos="fade-up-right">
+
+                <div class="text-bo col-sm-12 col-md-10 col-lg-10 col-xl-5 fond-color" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <h3 class="text1 text-center">Martín Osvaldo Ríos</h3>
+                    <p class="text2 ">Creador del Restaurante Visubio. Con la ayuda de su mejor amigo, Luis Enrique Lobera, el cual comenzaron su emprendimiento con muy pocos recursos y gracias a su constracia y resilencia lograron crear unos de los restaurante de cordoba. En el dia de la fecha se encuentra alejado de nuestro querido restaunte pero 1 vez por mes se acerca a cenar su plato favorito, lomo al picante.</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <h5 class="col-12 dueños"> DUEÑOS</h5>
+            <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center " data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card shadow p-3 mb-5 bg-dark bg-body" style="width: 18rem;">
+                    <img src="../imagenes/dueño1.jpg" class="card-img dueño123 animacion-img" alt="pizza2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-success">Jorge Ríos</h5>
+                        <p class="card-text text-white">Dueño - 24 Años</p>
+                    </div>
+                </div>  
+            </article>
+            <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center " data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card shadow p-3 mb-5 bg-dark bg-body" style="width: 18rem;">
+                    <img src="../imagenes/dueña2.jpg" class="card-img dueño123 animacion-img" alt="pizza2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-success">Marisa Ríos</h5>
+                        <p class="card-text text-white">Dueña - 21 Años</p>
+                    </div>
+                </div>  
+            </article>
+            <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center " data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card shadow p-3 mb-5 bg-dark bg-body" style="width: 18rem;">
+                    <img src="../imagenes/dueño3.jpg" class="card-img dueño3 dueño123" alt="pizza2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-success">Pedro Ríos</h5>
+                        <p class="card-text text-white">Dueño - 30 Años</p>
+                    </div>
+                </div>  
+            </article>
+
+
+            
+
+
+
+
+
         </div>
     </main>
 
@@ -111,4 +168,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script></body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>

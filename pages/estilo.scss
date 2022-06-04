@@ -42,11 +42,16 @@ $ul: map-get($map: $headings, $key: ul);
 .ul{
     font-size: $ul;
 }
-
+.card-text{
+    text-align: center;
+}
 .Header{
     background-color: $color1;
 }
-
+.visubio{
+    color:white;
+    text-shadow: 1px 1px 5px  green;
+}
 .logo{
     margin: 0;
     padding:25px 30px;
@@ -58,6 +63,17 @@ $ul: map-get($map: $headings, $key: ul);
     height: $height;
     width: $width;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .titulo{
     text-shadow: 1px 1px 2px black;
@@ -427,7 +443,9 @@ $paleta:(
     font-size: 12px;
     color: gray;
 }
-
+.texto-abuelo{
+    margin: 30px;
+}
 
 .precio{
     float: right;
@@ -494,7 +512,10 @@ $paleta:(
     margin-bottom: 15px;
     padding: 8px;
 }
+.card-3-index{
 
+    margin-bottom: 90px;
+}
 .contrataciones{
     text-align: center;
     margin: auto;
@@ -508,54 +529,58 @@ $paleta:(
 
 
 /*--------sobre-nosotros----*/
-@media only screen and (max-width: 320px){
-
+.text-box{
+    border: $color1 5px groove;
+    margin: 10px;
+}
+.text1{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}    
+.text2{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .video{
-    width: 340px;
+    background-size: cover;
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+}
+.abuelo{
+    background-size: cover;
+    margin-top: 20px;
+    filter: grayscale(80%);
+    padding: 0;
+    border-radius: 10%;
+    margin-right: 50px;
+}
+.historia{
+    margin-top: 50px;
+    border: #282828 2px solid;
+}
+.dueños{
+    padding:3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.fond-color{
+    background-color: $color1;
+    border-radius:10px ;
+}
+.dueño3{
+
     height: 200px;
-    margin: auto;
-    padding: auto;
-    border-radius: 15px;
+    background-size: cover;
+}
+.dueño123{
+    filter: grayscale(50%);
 }
 
-}
-@media  screen and (min-width: 880px){
-.text-box{
-    padding: auto;
-    margin:auto;
-    border: $color1 5px groove;
-}
-.text1{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}    
-.text2{
-    color: black
-}
-.video{
-    margin: 30px;
-    border-radius: 15px;
-}
-}
-
-@media screen and (max-width: 880px){
-.video{
-    transform: scale(0.7);
-    border-radius: 15px;
-}
-.text-box{
-    padding: auto;
-    margin: auto;
-    border: $color1 5px groove;
-}
-.text1{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}    
-.text2{
-    color: black
-}
-.video{
-    width: 100%;
-}
+.text-bo{
+    margin-bottom: 10px;
 }
